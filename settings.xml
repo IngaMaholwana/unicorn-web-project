@@ -1,30 +1,30 @@
 <settings>
     <servers>
         <server>
-            <id>unicorns-maven-central-store</id>
+            <id>unicorns-unicorn-packages</id>
             <username>aws</username>
             <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
         </server>
     </servers>
     <profiles>
         <profile>
-            <id>unicorns-maven-central-store</id>
+            <id>unicorns-unicorn-packages</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <repositories>
                 <repository>
-                    <id>unicorns-maven-central-store</id>
-                    <url>https://unicorns-982534375381.d.codeartifact.eu-west-1.amazonaws.com/maven/maven-central-store/</url>
+                    <id>unicorns-unicorn-packages</id>
+                    <url>https://unicorns-982534375381.d.codeartifact.eu-west-1.amazonaws.com/maven/unicorn-packages/</url>
                 </repository>
             </repositories>
         </profile>
     </profiles>
     <mirrors>
         <mirror>
-            <id>unicorns-maven-central-store</id>
-            <name>unicorns-maven-central-store</name>
-            <url>https://unicorns-982534375381.d.codeartifact.eu-west-1.amazonaws.com/maven/maven-central-store/</url>
+            <id>unicorns-unicorn-packages</id>
+            <name>unicorns-unicorn-packages</name>
+            <url>https://unicorns-982534375381.d.codeartifact.eu-west-1.amazonaws.com/maven/unicorn-packages/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
