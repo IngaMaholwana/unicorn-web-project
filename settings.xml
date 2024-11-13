@@ -1,4 +1,11 @@
 <settings>
+    <servers>
+        <server>
+            <id>unicorns-maven-central-store</id>
+            <username>aws</username>
+            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+        </server>
+    </servers>
     <profiles>
         <profile>
             <id>unicorns-maven-central-store</id>
@@ -13,13 +20,6 @@
             </repositories>
         </profile>
     </profiles>
-    <servers>
-        <server>
-            <id>unicorns-maven-central-store</id>
-            <username>aws</username>
-            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
-        </server>
-    </servers>
     <mirrors>
         <mirror>
             <id>unicorns-maven-central-store</id>
